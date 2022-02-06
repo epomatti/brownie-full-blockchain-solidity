@@ -1,4 +1,5 @@
 from brownie import accounts, config, SimpleStorage, network
+from scripts.utils import get_account
 import os
 
 
@@ -15,11 +16,11 @@ def deploy_simple_storage():
     updated_stored_value = simple_storage.retrieve()
     print(updated_stored_value)
 
-def get_account():
-    if(network.show_active() == "development"):
-        return accounts[0]
-    else:
-        return accounts.add(config["wallets"]["from_key"])
+# def get_account():
+#     if(network.show_active() == "development"):
+#         return accounts[0]
+#     else:
+#         return accounts.add(config["wallets"]["from_key"])
 
 
 def main():
