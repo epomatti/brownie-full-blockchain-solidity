@@ -30,4 +30,5 @@ npm install ganache --global
 
 ```bash
 brownie run scripts/deploy.py --network rinkeby
+brownie run scripts/deploy_fundme.py --network ganache-local
 ```
