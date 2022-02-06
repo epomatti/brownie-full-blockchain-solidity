@@ -29,5 +29,5 @@ npm install ganache --global
 ```
 
 ```bash
-brownie run
+brownie run scripts/deploy.py --network rinkeby
 ```
