@@ -7,8 +7,10 @@ def deploy_fund_me():
     account = get_account()
     print(account)
 
-    if network.show_active() != "development" not in LOCAL_BLOCKCHAIN_ENVIRONMENTS:
-        config["networks"][network.show_active()]["eth_usd_price_feed"]
+    if network.show_active() not in LOCAL_BLOCKCHAIN_ENVIRONMENTS:
+        price_feed_address = config["networks"][network.show_active()][
+            "eth_usd_price_feed"
+        ]
     else:
         deploy_mocks()
         price_feed_address = MockV3Aggregator[-1].address
