@@ -1,13 +1,15 @@
 # Solidity + Brownie
 
+Using Brownie framework to compile, deploy and test smart contracts.
+
 ## Setup
 
 ```bash
-$ sudo apt-get install python3-venv
-$ python3 -m venv env
-$ . env/bin/activate
-$ pip install --upgrade pip
-$ pip install eth-brownie
+sudo apt-get install python3-venv
+python3 -m venv env
+. env/bin/activate
+pip install --upgrade pip
+pip install eth-brownie
 ```
 
 ## Account config
